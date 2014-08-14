@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title></title>
+		<meta name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta charset='utf-8' />
+		<link rel='stylesheet' href='css/styles.css' />
+	</head>
+	
+	<body>
+
+	<header>
+	<h1>Ontario's Popular Baby Names</h1>
+
+		<form id='namesearch' class='nameSearch group'>
+			<input type='text' placeholder='search for a name' id='thisName' class='thisName'>
+			<section class='radioSelects group'>
+				<section class='radioWrap'>
+					<input type="radio" name="sex" value="female" checked id='radioCheck' class='radio female'>
+				</section>
+				<section class='radioWrap'>
+					<input type="radio" name="sex" value="male" class='radio male'>
+				</section>
+			</section>
+			<button type='submit'>Search</button>
+		</form>
+
+	</header>
+
+			<div class='canvasContainer'>
+				<canvas id="myChart" width="400" height="400"></canvas>
+			</div>
+
+		<div id='container' class='container'>
+
+			<h2>What is this?</h2>
+			<p>Inspired by <a href='http://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/' title='how to tell someones age when all you know is her name'>this article</a>
+			I thought I would try to build my own graphing site for data based in Canada. To do this I parsed data <a href='https://www.ontario.ca/government/ontario-top-baby-names-female'> Publicly Available</a>
+			from the government of ontario in conjunction with <a href='http://www.chartjs.org/'>Chart.js</a> to make an easilly accessible graph to show popularity of names between the years of 1917 and 2010. (This is the data available)</p>
+
+			<h2>What can I use this for?</h2>
+			<p>There are a lot of interesting trends that appear when looking at names over time. One particularly interesting thing I like to look at is names compared to movies. For example, take a look at the results for the name "Carrie", and the check out <a href='http://www.imdb.com/title/tt0074285/'>this IMDB page</a>.
+
+
+		</div>
+		
+
+		<script src='Chart.js/Chart.min.js'></script>
+		<script src='csvParser.js'></script>
+		<script src='app.js'></script>
+	</body>
+</html>

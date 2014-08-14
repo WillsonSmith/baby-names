@@ -1,0 +1,180 @@
+*, *:before, *:after {
+
+	box-sizing: border-box;
+
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+
+	background: #9b59b6;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: sans-serif;
+
+}
+
+header {
+
+	/*background: #8e44ad;*/
+
+	margin: 0 auto;
+
+	padding: 1em;
+
+}
+
+header h1 {
+
+	color: #fff;
+
+	font-weight: lighter;
+
+	font-family: sans-serif;
+
+}
+
+.container {
+
+
+	width: 90%;
+	margin: 1em auto;
+
+	background: white;
+
+	padding: 1em;
+
+}
+
+/*.container p {
+
+	padding: 1em;
+
+}*/
+
+
+.canvasContainer {
+
+	background: white;
+
+	margin: 0 auto;
+	/*padding: 0.5em;*/
+
+	box-shadow: inset 0 -1em 1em -1em rgba(0,0,0,0.65);
+
+}
+.nameSearch {
+
+	width: 80%;
+	margin: 0 auto;
+
+}
+.thisName {
+
+	border: none;
+
+	/*width: 80%;*/
+	width: 50%;
+	display: block;
+	/*margin: 0 auto 0.5em auto;*/
+	float: left;
+	font-size: 2em;
+
+	margin: 0;
+
+}
+
+button {
+
+	background: #2ecc71;
+	/*background: #d1f794;*/
+	border: none;
+
+	display: block;
+	margin: 0 auto;
+	font-size: 2em;
+	width: 100%;
+
+
+}
+
+.radioSelects {
+
+	background: #fff;
+	border-radius: 0 0.2em 0.2em 0;
+
+	width: 50%;
+
+	margin: 0 auto 0.5em auto;
+	padding: 0.1em;
+
+	float: left;
+
+}
+
+.radio{
+
+	opacity: 0;
+	position: relative;
+
+	background: none;
+
+	width: 100%;
+
+	height: 2em;
+
+}
+
+.radioWrap {
+
+
+	font-family: sans-serif;
+
+	position: relative;
+
+	z-index: 1;
+
+	width: 50%;
+
+	float: left;
+
+	border-radius: 0.2em;
+
+	overflow: hidden;
+
+	font-size: 2em;
+
+
+}
+
+.radioWrap:before {
+
+	content: attr(data-label);
+
+	color: #3498db;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	text-align: center;
+
+
+}
+.radioWrap.active:before {
+
+	color: #fff;
+	background: #3498db;
+	z-index: -1;
+
+}
+/*00c90d*/
