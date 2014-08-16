@@ -177,4 +177,22 @@ button {
 	z-index: -1;
 
 }
+
+@media (max-width: 600px) {
+
+	.thisName {
+
+		width: 100%;
+		margin: 0 0 10px 0;
+
+	}
+
+	.radioSelects {
+
+		width: 100%;
+		border-radius: 0.2em;
+
+	}
+
+}
 /*00c90d*/
